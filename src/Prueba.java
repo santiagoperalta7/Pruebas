@@ -8,7 +8,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class Prueba {
-	public static void findAllPossibleSized(String req) {
+	public static void findAllPossibleSizes(String req) {
 		JsonParser parser = new JsonParser();
 		JsonObject o = parser.parse(req).getAsJsonObject();
 		String jsonGroups = o.get("groups").getAsString();
@@ -55,7 +55,7 @@ public class Prueba {
 		String req = "{"
 				+ "\"groups\":\"3,3,3,3,3,3,3,3,a\""
 				+ "}";
-		findAllPossibleSized(req);
+		findAllPossibleSizes(req);
 	}
 }
 
